@@ -16,7 +16,11 @@
     "env": {
       "PYTHON_VERSION": "3.9",
       "PIP_NO_CACHE_DIR": "1",
-      "TRANSFORMERS_CACHE": "/tmp/.cache"
+      "TRANSFORMERS_CACHE": "/tmp/.cache",
+      "UV_INSTALL_MODE": "pip",
+      "TORCH_CPU_ONLY": "1",
+      "CUDA_VISIBLE_DEVICES": "",
+      "FORCE_CPU": "1"
     }
   }
 }
