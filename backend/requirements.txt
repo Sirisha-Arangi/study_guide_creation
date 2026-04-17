@@ -23,8 +23,8 @@ httpx==0.25.2
 pytest==7.4.3
 pytest-asyncio==0.21.1
 
-# ML Libraries (let them handle their own dependencies):
+# ML Libraries (compatible versions):
 sentence-transformers==2.2.2
-transformers==4.21.3
-huggingface_hub==0.12.1
-numpy==1.24.3
+transformers==4.30.2
+huggingface_hub==0.14.1
+numpy==1.26.4
