@@ -28,5 +28,5 @@ sentence-transformers==2.2.2
 transformers==4.21.3
 huggingface_hub==0.12.1
 numpy==1.24.3
-torch==2.0.1+cpu --index-url https://download.pytorch.org/whl/cpu
+torch==2.0.1+cpu
 # Last updated: 10/17/2025 22:28:35
