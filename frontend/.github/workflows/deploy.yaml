@@ -33,7 +33,7 @@ jobs:
       working-directory: ./frontend
       run: npm run build
       env:
-        VITE_API_URL: https://your-backend.onrender.com/api
+        VITE_API_URL: https://study-guide-creation-ntyl.vercel.app/api
     
     - name: Setup Pages
       uses: actions/configure-pages@v4
