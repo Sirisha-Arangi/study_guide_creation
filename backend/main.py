@@ -3,11 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer
 from sqlalchemy.orm import Session
 from sqlalchemy import inspect, text
-from .config import settings
-from .database import engine, get_db
-from .database import Base
-from .api import auth, documents, features
-from .core.dependencies import get_current_active_user
+from app.config import settings                    # Fixed
+from app.database import engine, get_db               # Fixed
+from app.database import Base                        # Fixed
+from app.api import auth, documents, features       # Fixed
+from app.core.dependencies import get_current_active_user  # Fixed
 
 # Create database tables
 Base.metadata.create_all(bind=engine)
@@ -143,7 +143,7 @@ async def get_current_user_info(current_user = Depends(get_current_active_user))
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(
-        "app.main:app",
+        "main:app",                    # Fixed
         host="0.0.0.0",
         port=8000,
         reload=settings.debug
